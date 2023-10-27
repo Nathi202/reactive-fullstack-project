@@ -1,0 +1,14 @@
+<h1>List of Addresses</h1>
+
+<div style="margin-bottom: 30px;"></div>
+
+<ng-container *ngFor="let address of (addresses$ | async)">
+
+  <h4>Full address: {{address.full_address}}</h4>
+  <h4>Province: {{address.province_iso}}</h4>
+  <h4>Country: {{address.country_iso}}</h4>
+
+  <mat-divider></mat-divider>
+
+</ng-container>
+
